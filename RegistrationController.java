@@ -24,7 +24,7 @@ public class RegistrationController {
 			User userObj =service.fetchUserByEmailId(tempEmailId);
 			if(userObj!=null)
 			{
-				throw new Exception("user with  "+tempEmailId+" is alredy exist");
+				throw new okException("user with  "+tempEmailId+" is alredy exist");
 			}
 		}
 		User userObj=null;
