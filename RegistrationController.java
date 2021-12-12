@@ -16,7 +16,7 @@ public class RegistrationController {
 	private RegistrationService service;
 	
 	@PostMapping("/registeruser")
-	public User registerUser(@RequestBody User user) throws Exception
+	public User registerUserset(@RequestBody User user) throws Exception
 	{
 		String tempEmailId= user.getEmailId();
 		if(tempEmailId !=null && !"".equals(tempEmailId))
